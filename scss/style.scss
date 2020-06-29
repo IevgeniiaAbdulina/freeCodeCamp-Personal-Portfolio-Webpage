@@ -1,3 +1,31 @@
-body {
+body, html {
   color: chocolate;
+  overflow-x: hidden;
+}
+
+li {
+  t
+}
+
+a {
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.welcome-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 560px) {
+  body {
+    color: cornflowerblue;
+  }
 }
