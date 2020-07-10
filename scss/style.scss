@@ -49,6 +49,9 @@ html {
   font-style: 16px;
   color: $color-black;
   background: $color-white-bg;
+  @media (max-width: 560px) {
+    color: $color-green-dark;
+  }
 }
 
 ul {
@@ -127,17 +130,14 @@ section {
   }
 }
 
-@media (max-width: 560px) {
-  body {
-    color: cornflowerblue;
-  }
-}
-
 ////////// PROJECTS SECTION //////////
 
 .projects-section-header {
   padding: 1.25rem 5rem;
   text-align: center;
+  @media (max-width: 560px) {
+    padding: 1.25rem 1rem;
+  }
 
   h3 {
     margin: 0 0 2.5rem 0;
@@ -145,7 +145,10 @@ section {
       content: "";
       padding: 2px;
       display: block;
-      background-color: #0a0a0a;
+      background-color: $color-black;
+      @media (max-width: 560px) {
+        background-color: $color-green-dark;
+      }
     }
   }
 }
@@ -204,6 +207,9 @@ section {
   background: $color-orange-bg;
   border-bottom: 8px solid $color-orange-dark;
   color: $color-gray-light;
+  @media (max-width: 560px) {
+    padding: 1.25rem 1rem;
+  }
 
   p {
     margin-bottom: 1rem;
@@ -236,24 +242,24 @@ section {
 ////////// FOOTER SECTION //////////
 
 footer {
-  padding: 2.5rem 0;
+  padding: 2.5rem 1rem;
   background-color: $color-orange-bg;
   color: $color-gray-light;
   text-align: center;
   font-size: 1rem;
 
   a {
-    color: $color-green-dark;
+    color: $color-orange-dark;
+    font-weight: $font-weight-bold;
     &:hover {
-      color: $color-skin;
+      color: $color-green-dark;
       text-decoration: underline;
     }
   }
 }
 
 .authors-ic {
-  color: $color-orange-dark;
-  opacity: 0.9;
-  font-size: 0.875rem;
+  opacity: 0.75;
+  font-size: 0.75rem;
   padding: 1rem;
 }
