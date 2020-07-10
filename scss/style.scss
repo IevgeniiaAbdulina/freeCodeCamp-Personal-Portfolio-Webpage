@@ -1,10 +1,52 @@
-body, html {
-  color: chocolate;
-  overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700");
+
+$color-green-dark: #2f736c;
+$color-green: #49a669;
+$color-gray-light: #f2f2f2;
+$color-skin: #d9b19a;
+$color-orange-dark: #bf544b;
+
+$color-orange-bg: #f06c4e;
+$color-pink-highlight: #ffd7d2;
+$color-white-bg: #f8f7f5;
+$color-black-typography: #0a0a0a;
+
+/* Color Theme Swatches in Hex */
+$Momiji-Life-1-hex: #2f736c;
+$Momiji-Life-2-hex: #49a669;
+$Momiji-Life-3-hex: #f2f2f2;
+$Momiji-Life-4-hex: #d9b19a;
+$Momiji-Life-5-hex: #bf544b;
+
+/* Color Theme Swatches in RGBA */
+$Momiji-Life-1-rgba: rgba(47, 114, 107, 1);
+$Momiji-Life-2-rgba: rgba(72, 165, 105, 1);
+$Momiji-Life-3-rgba: rgba(242, 242, 242, 1);
+$Momiji-Life-4-rgba: rgba(216, 176, 153, 1);
+$Momiji-Life-5-rgba: rgba(191, 84, 74, 1);
+
+/* Color Theme Swatches in HSLA */
+$Momiji-Life-1-hsla: hsla(174, 41, 31, 1);
+$Momiji-Life-2-hsla: hsla(140, 38, 46, 1);
+$Momiji-Life-3-hsla: hsla(0, 0, 95, 1);
+$Momiji-Life-4-hsla: hsla(22, 45, 72, 1);
+$Momiji-Life-5-hsla: hsla(5, 47, 52, 1);
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-li {
-  t
+body,
+html {
+  color: chocolate;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-style: 16px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -17,6 +59,29 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
+}
+
+nav {
+  padding: 20px 0;
+  background: $color-orange-bg;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      a {
+        font-size: 1rem;
+        font-weight: bold;
+        color: $color-gray-light;
+        padding: 20px;
+        &:hover {
+          background-color: $color-orange-dark;
+        }
+      }
+    }
+  }
 }
 
 .welcome-section {
