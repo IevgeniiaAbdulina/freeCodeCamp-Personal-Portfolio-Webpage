@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700");
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 
@@ -11,7 +11,7 @@ $color-orange-dark: #bf544b;
 $color-orange-bg: #f06c4e;
 $color-pink-highlight: #ffd7d2;
 $color-white-bg: #f8f7f5;
-$color-black-typography: #0a0a0a;
+$color-black: #0a0a0a;
 
 /* Color Theme Swatches in Hex */
 $Momiji-Life-1-hex: #2f736c;
@@ -34,17 +34,20 @@ $Momiji-Life-3-hsla: hsla(0, 0, 95, 1);
 $Momiji-Life-4-hsla: hsla(22, 45, 72, 1);
 $Momiji-Life-5-hsla: hsla(5, 47, 52, 1);
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body,
 html {
   overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: 16px;
-  color: $color-black-typography;
+  color: $color-black;
   background: $color-white-bg;
 }
 
@@ -66,7 +69,7 @@ a {
 }
 
 nav {
-  padding: 20px 0;
+  padding: 1.25rem 0;
   background: $color-orange-bg;
 
   ul {
@@ -78,7 +81,7 @@ nav {
         font-size: 1rem;
         font-weight: $font-weight-bold;
         color: $color-gray-light;
-        padding: 20px;
+        padding: 1.25rem;
         &:hover {
           background-color: $color-orange-dark;
         }
@@ -92,8 +95,10 @@ section {
 }
 
 .container {
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
+
+////////// WELCOME SECTION //////////
 
 .welcome-section {
   width: 100vw;
@@ -119,4 +124,68 @@ section {
   body {
     color: cornflowerblue;
   }
+}
+
+////////// PROJECTS SECTION //////////
+
+.projects-section-header {
+  padding: 1.25rem 5rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+
+  h3 {
+    font-size: 2rem;
+    &::after {
+      content: "";
+      padding: 2px;
+      display: block;
+      background-color: #0a0a0a;
+    }
+  }
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-tile {
+  margin: 1rem;
+  padding-bottom: 4rem;
+  color: $color-white-bg;
+  text-align: center;
+  overflow: hidden;
+  flex: 1 0 24rem;
+
+  &:hover {
+    .code {
+      color: $color-orange-bg;
+    }
+  }
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+.project-name {
+  padding: 1.25rem 0;
+  background: $color-black;
+  position: relative;
+  color: $color-gray-light;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.code {
+  color: $color-black;
+  transition: color 0.3 ease-out;
 }
