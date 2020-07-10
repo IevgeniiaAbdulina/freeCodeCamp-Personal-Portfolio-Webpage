@@ -9,10 +9,11 @@
 
 body,
 html {
-  color: chocolate;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   font-style: 16px;
+  color: #0a0a0a;
+  background: #f8f7f5;
 }
 
 ul {
@@ -44,7 +45,7 @@ nav ul {
 
 nav ul li a {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #f2f2f2;
   padding: 20px;
 }
@@ -53,9 +54,32 @@ nav ul li a:hover {
   background-color: #bf544b;
 }
 
+section {
+  padding: 5rem 0 0 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+
 .welcome-section {
   width: 100vw;
   height: 100vh;
+  background: #2f736c;
+}
+
+.welcome-section h1 {
+  padding: 30vh 0 0 0;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #ffd7d2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.welcome-section span {
+  color: #f2f2f2;
+  font-size: 3.75rem;
 }
 
 @media (max-width: 560px) {

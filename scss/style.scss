@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700");
+$font-weight-regular: 400;
+$font-weight-bold: 700;
 
 $color-green-dark: #2f736c;
 $color-green: #49a669;
@@ -39,10 +41,11 @@ $Momiji-Life-5-hsla: hsla(5, 47, 52, 1);
 
 body,
 html {
-  color: chocolate;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   font-style: 16px;
+  color: $color-black-typography;
+  background: $color-white-bg;
 }
 
 ul {
@@ -73,7 +76,7 @@ nav {
     li {
       a {
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: $font-weight-bold;
         color: $color-gray-light;
         padding: 20px;
         &:hover {
@@ -84,9 +87,32 @@ nav {
   }
 }
 
+section {
+  padding: 5rem 0 0 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+
 .welcome-section {
   width: 100vw;
   height: 100vh;
+  background: $color-green-dark;
+
+  h1 {
+    padding: 30vh 0 0 0;
+    font-size: 4.5rem;
+    font-weight: $font-weight-bold;
+    color: $color-pink-highlight;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  span {
+    color: $color-gray-light;
+    font-size: 3.75rem;
+  }
 }
 
 @media (max-width: 560px) {
