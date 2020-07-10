@@ -1,1 +1,5 @@
-# [freeCodeCamp](https://www.freecodecamp.org/abdulina) | [Personal Portfolio Webpage](https://github.com/IevgeniiaAbdulina/freeCodeCamp-Personal-Portfolio-Webpage)
+## Challenge by [freeCodeCamp](https://www.freecodecamp.org/). Personal Portfolio Webpage.
+
+**<img src="img/favicon.svg" width="24"> Web Developer - Personal Portfolio Webpage**
+
+<img src="img/desktop-img.png" width="800">
